@@ -15,6 +15,7 @@ const Lister = () => {
 
     return (
         <>
+            <h1>Products</h1>
             {products.map((product: any) => {
                 return (
                     <Link key={product.id} style={{ textDecoration: 'none' }} to={`/products/${product.id}`}>

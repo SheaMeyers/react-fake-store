@@ -10,7 +10,7 @@ const Product = (props: any) => {
             <CardContent>
                 <Avatar alt={`${props.title} Image`} src={`${props.image}`} />
                 <h3>{props.title}</h3>
-                <h4>${props.price}</h4>
+                <h4>€{props.price}</h4>
                 <p>Category: {props.category}</p>
             </CardContent>
         </Card>
