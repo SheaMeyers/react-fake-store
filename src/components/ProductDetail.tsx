@@ -14,7 +14,13 @@ const ProductDetail = (props: any) => {
         fetch(`https://fakestoreapi.com/products/${id}`)
             .then(res=>res.json())
             .then(json=>setProduct(json))
-    }, [props.id]);
+    }, [id]);
+
+    const handleAddProduct = () => {
+        let products = window.localStorage.getItem('products') || '';
+        window.localStorage.setItem('products', products + `${id},`);
+        window.location.reload(); // TODO Should be a better way to do this
+    }
 
     return (
         <>
@@ -26,7 +32,7 @@ const ProductDetail = (props: any) => {
                     price={(product as any).price}
                     category={(product as any).category}
                 />
-                <Button variant="contained">Add to Cart</Button>
+                <Button variant="contained" onClick={_ => handleAddProduct()}>Add to Cart</Button>
                 </>
             }   
         </>
