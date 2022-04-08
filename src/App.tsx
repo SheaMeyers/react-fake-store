@@ -8,17 +8,19 @@ import ProductDetail from "./components/ProductDetail";
 
 const App = () => {
   return (
-    <>
+    <div className="App">
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Lister />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="App__Main">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Lister />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
