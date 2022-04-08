@@ -1,16 +1,19 @@
-import React from "react";
+import Avatar from '@mui/material/Avatar';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+
 
 // TODO Add type to props
 const Product = (props: any) => {
     return (
-        <div>
-            <p>-------------------</p>
-            <p>Image {props.image}</p>
-            <p>Title {props.title}</p>
-            <p>Price {props.price}</p>
-            <p>Category {props.category}</p>
-            <p>-------------------</p>
-        </div>
+        <Card variant="outlined">
+            <CardContent>
+                <Avatar alt={`${props.title} Image`} src={`${props.image}`} />
+                <h3>{props.title}</h3>
+                <h4>${props.price}</h4>
+                <p>Category: {props.category}</p>
+            </CardContent>
+        </Card>
     )
 }
 

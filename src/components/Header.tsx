@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
-import Product from './Product';
 
 // TODO Add type
 const Header = (props: any) => {

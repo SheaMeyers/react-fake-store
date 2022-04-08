@@ -17,7 +17,7 @@ const Lister = () => {
         <>
             {products.map((product: any) => {
                 return (
-                    <Link key={product.id} to={`/product/${product.id}`}>
+                    <Link key={product.id} style={{ textDecoration: 'none' }} to={`/product/${product.id}`}>
                         <Product 
                             image={product.image}
                             title={product.title}
