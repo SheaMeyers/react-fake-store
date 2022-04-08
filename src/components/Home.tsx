@@ -1,11 +1,12 @@
 import Lister from "./Lister";
+import HeroPhoto from "../images/Hercules.jpeg";
 
 const Home = () => {
     return (
-        <div>
-            This is the home component
+        <>
+            <img src={HeroPhoto} alt="Hero" height="900" />
             <Lister />
-        </div>
+        </>
     )
 }
 
