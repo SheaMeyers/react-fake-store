@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import Lister from "./components/Lister";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 import ProductDetail from "./components/ProductDetail";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Lister />} />
             <Route path="/products/:id" element={<ProductDetail />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </div>
