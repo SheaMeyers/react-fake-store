@@ -4,7 +4,7 @@ import Chip from '@mui/material/Chip';
 import Link from '@mui/material/Link';
 import HeroPhoto from "../images/Hercules.jpeg";
 import CartPhoto from "../images/cart.png";
-import "../Header.css";
+import "../styles/Header.css";
 
 const Header = () => {
 

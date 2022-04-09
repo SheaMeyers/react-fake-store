@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Home from "./components/Home";
-import Header from "./components/Header";
-import Lister from "./components/Lister";
-import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
-import ProductDetail from "./components/ProductDetail";
+import "../styles/App.css";
+import Home from "./Home";
+import Header from "./Header";
+import Lister from "./Lister";
+import Footer from "./Footer";
+import NotFound from "./NotFound";
+import ProductDetail from "./ProductDetail";
 
 const App = () => {
   return (
