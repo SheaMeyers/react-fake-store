@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Product from "./Product";
 import { Link } from "react-router-dom";
+import { getProducts } from "../api";
   
 
 
@@ -8,9 +9,12 @@ const Lister = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=>setProducts(json))
+        const initializeProducts = async () => {
+            const products = await getProducts();
+            setProducts(products);
+        };
+
+        initializeProducts();
     }, [])
 
     return (
@@ -28,6 +32,7 @@ const Lister = () => {
                     </Link>
                 )
             })}
+            {products.length === 0 && <p>...loading</p>}
         </>
     )
 
