@@ -1,10 +1,10 @@
 import Avatar from '@mui/material/Avatar';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import type { ProductType } from "../types";
 
 
-// TODO Add type to props
-const Product = (props: any) => {
+const Product = (props: ProductType) => {
     return (
         <Card variant="outlined">
             <CardContent>

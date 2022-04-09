@@ -3,11 +3,11 @@ import Button from '@mui/material/Button';
 import Product from "./Product";
 import { useParams } from "react-router-dom";
 import { getProductById } from "../api";
+import type { ProductType } from "../types";
 
-// TODO Add type here, should just be the ID of the product
-const ProductDetail = (props: any) => {
+const ProductDetail = () => {
     let { id } = useParams();
-    const [product, setProduct] = useState(null)
+    const [product, setProduct] = useState<ProductType | null>(null)
 
     // Improvement: Could allow passing all product information
     //   to save an API call when coming from Lister page
@@ -25,19 +25,20 @@ const ProductDetail = (props: any) => {
     const handleAddProduct = () => {
         let products = window.localStorage.getItem('products') || '';
         window.localStorage.setItem('products', products + `${id},`);
-        window.location.reload(); // TODO Should be a better way to do this
+        window.location.reload(); // TODO Consider a better way to do this
     }
 
     return (
         <>
             <h1>Product</h1>
-            {product ?
+            {product 
+                ?
                 <>
                     <Product 
-                        image={(product as any).image}
-                        title={(product as any).title}
-                        price={(product as any).price}
-                        category={(product as any).category}
+                        image={product.image}
+                        title={product.title}
+                        price={product.price}
+                        category={product.category}
                     />
                     <Button variant="contained" onClick={_ => handleAddProduct()}>Add to Cart</Button>
                 </>

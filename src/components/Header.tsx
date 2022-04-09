@@ -6,8 +6,7 @@ import HeroPhoto from "../images/Hercules.jpeg";
 import CartPhoto from "../images/cart.png";
 import "../Header.css";
 
-// TODO Add type
-const Header = (props: any) => {
+const Header = () => {
 
     const getNumProducts = () => {
         let products = window.localStorage.getItem('products') || '';
