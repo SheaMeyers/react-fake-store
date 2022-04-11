@@ -1,4 +1,3 @@
-import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
 import Lister from "../components/Lister";
 import { BrowserRouter } from "react-router-dom";

@@ -23,7 +23,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-A currently live version of this app is available at https://netlify-thinks-shea-meyers-gmail-com-is-great-8d0aa.netlify.app/
+A live version of this app is available at https://netlify-thinks-shea-meyers-gmail-com-is-great-8d0aa.netlify.app/
 
 
 ## Other Info

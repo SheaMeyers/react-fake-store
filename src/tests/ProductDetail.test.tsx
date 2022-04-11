@@ -9,8 +9,8 @@ jest.mock("react-router-dom", () => ({
 }));
 
 beforeEach(() => {
-    jest.spyOn(Router, "useParams").mockReturnValue({ id: "1" });
-})
+  jest.spyOn(Router, "useParams").mockReturnValue({ id: "1" });
+});
 
 test("renders initial product detail page", () => {
   render(
@@ -23,8 +23,6 @@ test("renders initial product detail page", () => {
 });
 
 test("renders product detail page with product and button", async () => {
-  console.log("in test");
-
   render(
     <BrowserRouter>
       <ProductDetail />

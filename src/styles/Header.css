@@ -1,4 +1,4 @@
-.Header { 
+.Header {
     flex-direction: row !important;
     align-items: center;
     justify-content: space-between;
@@ -14,4 +14,3 @@
 .Avatar {
     margin: 0 20px;
 }
-
