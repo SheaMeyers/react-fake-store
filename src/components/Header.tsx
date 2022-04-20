@@ -2,8 +2,8 @@ import AppBar from "@mui/material/AppBar";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 import Link from "@mui/material/Link";
-import HeroPhoto from "../images/Hercules.jpeg";
-import CartPhoto from "../images/Cart.png";
+import BoyPhoto from "../images/boy.jpg";
+import CartPhoto from "../images/shoppingCart.jpg";
 import "../styles/Header.css";
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <AppBar position="static" className="Header">
       <Link href="/">
-        <Avatar src={HeroPhoto} alt="Hero" className="Avatar" />
+        <Avatar src={BoyPhoto} alt="Hero" className="Avatar" />
       </Link>
       <Chip
         label="Products"

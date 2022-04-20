@@ -1,11 +1,10 @@
 import Lister from "./Lister";
-import HeroPhoto from "../images/Hercules.jpeg";
 
 const Home = () => {
   return (
     <>
       <h1>Home</h1>
-      <img src={HeroPhoto} alt="Hero" height="900" />
+      <h2>Welcome to the Fake React Store</h2>
       <Lister />
     </>
   );
