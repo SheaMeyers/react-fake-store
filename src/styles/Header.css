@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.Cart__Number {
+    color: black;
+}
+
 .Avatar {
     margin: 0 20px;
 }
