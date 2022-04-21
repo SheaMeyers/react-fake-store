@@ -23,7 +23,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-A live version of this app is available at https://netlify-thinks-shea-meyers-gmail-com-is-great-8d0aa.netlify.app/
+A live version of this app is available at https://react-fake-store.sheameyers.com/
 
 
 ## Other Info
@@ -34,5 +34,5 @@ This project makes use of [MUI](https://mui.com/) and uses this library for it's
 
 ### Deployment
 
-This project has a live version which is currently hosted on Netlify at the address
-https://netlify-thinks-shea-meyers-gmail-com-is-great-8d0aa.netlify.app/
+This project has a live version which is currently hosted on Github Pages at the address
+https://react-fake-store.sheameyers.com/
