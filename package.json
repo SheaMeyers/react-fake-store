@@ -1,5 +1,6 @@
 {
   "name": "react-fake-store",
+  "homepage": "https://react-fake-store.sheameyers.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
